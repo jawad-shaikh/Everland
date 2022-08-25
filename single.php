@@ -20,16 +20,16 @@
                             <div class="single_prodct">
                                 <ul class="nav nav-tabs justify-content-center mb-55" id="dfde" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#homde" type="button" role="tab" aria-selected="true"><img src="./assets/img/product/17.jpg" alt=""></button>
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#homde" type="button" role="tab" aria-selected="true"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profidfdle" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/17-1.jpg" alt=""></button>
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profidfdle" type="button" role="tab" aria-selected="false"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contadfdct" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/17-2.jpg" alt=""></button>
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contadfdct" type="button" role="tab" aria-selected="false"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kidsdfd" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/17-3.jpg" alt=""></button>
+                                        <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kidsdfd" type="button" role="tab" aria-selected="false"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                 </ul>
                             </div>
@@ -43,22 +43,22 @@
                             <div class="tab-content" id="myTabefContent">
                                 <div class="tab-pane fade show active" id="homde" role="tabpanel">
                                     <div class="full-view">
-                                        <img src="./assets/img/product/17.jpg" alt="">
+                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="profidfdle" role="tabpanel">
                                     <div class="full-view">
-                                        <img src="./assets/img/product/17-1.jpg" alt="">
+                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="contadfdct" role="tabpanel">
                                     <div class="full-view">
-                                        <img src="./assets/img/product/17-2.jpg" alt="">
+                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="kidsdfd" role="tabpanel">
                                     <div class="full-view">
-                                        <img src="./assets/img/product/17-3.jpg" alt="">
+                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                                                                             <div class="product__thumb">
                                                                                 <a href="#">
                                                                                     <img class="product-primary" src="./assets/img/product/cat1.png" alt="product_image">
-                                                                                    <img class="product-secondary" src="./assets/img/product/cat2.png" alt="product_image">
+                                                                                    <img class="product-secondary" src="./assets/img/product/6.jpg" alt="product_image">
                                                                                 </a>
                                                                                 <div class="product__update">
                                                                                     <a class="#">new</a>

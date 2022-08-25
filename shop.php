@@ -138,8 +138,8 @@
                                             <div class="product product-4">
                                                 <div class="product__thumb">
                                                     <a href="single.html">
-                                                        <img class="product-primary" src="./assets/img/product/17.jpg" alt="product_image">
-                                                        <img class="product-secondary" src="./assets/img/product/17-2.jpg" alt="product_image">
+                                                    <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
+                                                        <img class="product-secondary" src="./assets/img/product/4-2.jpg" alt="product_image">
                                                     </a>
                                                     <!-- <div class="product__update">
                                                         <a class="#">new</a>
@@ -165,8 +165,8 @@
                                             <div class="product product-4">
                                                 <div class="product__thumb">
                                                     <a href="single.html">
-                                                        <img class="product-primary" src="./assets/img/product/17.jpg" alt="product_image">
-                                                        <img class="product-secondary" src="./assets/img/product/17-2.jpg" alt="product_image">
+                                                    <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
+                                                        <img class="product-secondary" src="./assets/img/product/4-2.jpg" alt="product_image">
                                                     </a>
                                                     <!-- <div class="product__update">
                                                             <a class="#">new</a>
@@ -195,8 +195,8 @@
                                             <div class="product product-3">
                                                 <div class="product__thumb">
                                                     <a href="single.html">
-                                                        <img class="product-primary" src="./assets/img/product/17.jpg" alt="product_image">
-                                                        <img class="product-secondary" src="./assets/img/product/17-2.jpg" alt="product_image">
+                                                        <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
+                                                        <img class="product-secondary" src="./assets/img/product/4-2.jpg" alt="product_image">
                                                     </a>
                                                     <!-- <div class="product__update">
                                                             <a class="#">new</a>
@@ -225,7 +225,7 @@
                                             <div class="col-xl-4 col-lg-4 col-md-4">
                                                 <div class="list-product">
                                                     <div class="list__thumb">
-                                                        <a href="single.html"><img src="./assets/img/product/5.jpg" alt=""></a>
+                                                        <a href="single.html"><img src="./assets/img/product/3-2.jpg" alt=""></a>
                                                     </div>
                                                 </div>
                                             </div>
