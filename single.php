@@ -12,15 +12,6 @@
 <!-- single_breadcrumb_area start -->
 <div class="single_breadcrumb pt-25">
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                <li class="breadcrumb-item"><a href="#">Outerwears</a></li>
-                <li class="breadcrumb-item"><a href="#">jackets</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Arsenal Home Jersey</li>
-            </ol>
-        </nav>
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="row">
@@ -78,14 +69,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="single_preview_content pl-30">
                     <h2 class="title-5 edit-title border-bottom-0">Arsenal Home Jersey</h2>
-                    <div class="s-product-review">
-                        <span><i class="far fa-star start-color"></i></span>
-                        <span><i class="far fa-star start-color"></i></span>
-                        <span><i class="far fa-star start-color"></i></span>
-                        <span><i class="far fa-star start-color"></i></span>
-                        <span><i class="far fa-star"></i></span>
-                        <span class="pl-left">(1 customer review)</span>
-                    </div>
+                    
                     <div class="s-price pt-30 mb-30">
                         <span>$45.00</span>
                     </div>

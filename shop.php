@@ -145,35 +145,13 @@
                                                         <a class="#">new</a>
                                                     </div> -->
                                                     <div class="product-info mb-10">
-                                                        <div class="product_category">
-                                                            <span>Shoes, Clothing</span>
-                                                        </div>
-                                                        <div class="product_rating">
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star"></i></a>
-                                                            <a href="#"><i class="fal fa-star"></i></a>
-                                                        </div>
+                                                       
                                                     </div>
                                                     <div class="product__name">
                                                         <h4><a href="single.html">ndoor Shoes Home Slipper</a></h4>
                                                         <div class="pro-price">
                                                             <p class="p-absoulute pr-1"><span>$</span>680.00 - <span>$</span>680.00</p>
                                                             <a class="p-absoulute pr-2" href="#">add to cart</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__action">
-                                                        <div class="inner__action">
-                                                            <div class="wishlist">
-                                                                <a href="#"><i class="fal fa-heart"></i></a>
-                                                            </div>
-                                                            <div class="view">
-                                                                <a href="javascript:void(0)"><i class="fal fa-eye"></i></a>
-                                                            </div>
-                                                            <div class="layer">
-                                                                <a href="#"><i class="fal fa-layer-group"></i></a>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -194,16 +172,7 @@
                                                             <a class="#">new</a>
                                                         </div> -->
                                                     <div class="product-info mb-10">
-                                                        <div class="product_category">
-                                                            <span>Shoes, Clothing</span>
-                                                        </div>
-                                                        <div class="product_rating">
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star"></i></a>
-                                                            <a href="#"><i class="fal fa-star"></i></a>
-                                                        </div>
+                                                        
                                                     </div>
                                                     <div class="product__name">
                                                         <h4><a href="single.html">Sneakers Converse for Men</a></h4>
@@ -213,17 +182,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="product__action">
-                                                        <div class="inner__action">
-                                                            <div class="wishlist">
-                                                                <a href="#"><i class="fal fa-heart"></i></a>
-                                                            </div>
-                                                            <div class="view">
-                                                                <a href="javascript:void(0)"><i class="fal fa-eye"></i></a>
-                                                            </div>
-                                                            <div class="layer">
-                                                                <a href="#"><i class="fal fa-layer-group"></i></a>
-                                                            </div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -243,16 +202,7 @@
                                                             <a class="#">new</a>
                                                         </div> -->
                                                     <div class="product-info mb-10">
-                                                        <div class="product_category">
-                                                            <span>Shoes, Clothing</span>
-                                                        </div>
-                                                        <div class="product_rating">
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star start-color"></i></a>
-                                                            <a href="#"><i class="fal fa-star"></i></a>
-                                                            <a href="#"><i class="fal fa-star"></i></a>
-                                                        </div>
+                                                        
                                                     </div>
                                                     <div class="product__name">
                                                         <h4><a href="single.html">NikeCourt Air Zoom Prestige</a></h4>
@@ -262,17 +212,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="product__action">
-                                                        <div class="inner__action">
-                                                            <div class="wishlist">
-                                                                <a href="#"><i class="fal fa-heart"></i></a>
-                                                            </div>
-                                                            <div class="view">
-                                                                <a href="javascript:void(0)"><i class="fal fa-eye"></i></a>
-                                                            </div>
-                                                            <div class="layer">
-                                                                <a href="#"><i class="fal fa-layer-group"></i></a>
-                                                            </div>
-                                                        </div>
+                                                     
                                                     </div>
                                                 </div>
                                             </div>
@@ -297,12 +237,6 @@
                                                                 <h2 class="mb-10">especially for Carl Hansen</h2>
                                                             </a>
                                                         </div>
-                                                        <div class="viewcontent__rating">
-                                                            <i class="fal fa-star ratingcolor"></i>
-                                                            <i class="fal fa-star ratingcolor"></i>
-                                                            <i class="fal fa-star ratingcolor"></i>
-                                                            <i class="fal fa-star"></i>
-                                                        </div>
                                                         <div class="viewcontent__price">
                                                             <h4><span>$</span> 55.00</h4>
                                                         </div>
@@ -312,8 +246,7 @@
                                                         <div class="list-actions pt-20">
                                                             <div class="viewcontent__action">
                                                                 <span><a href="#">add to cart</a></span>
-                                                                <a href="#"><i class="fal fa-heart"></i></a>
-                                                                <a class="ml-5" href="#"><i class="fal fa-layer-group"></i></a>
+                                                               
                                                             </div>
                                                         </div>
                                                     </div>
