@@ -9,6 +9,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Mandatory scripts for Icons to load before the content -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -22,9 +26,26 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
+
+
+<!-- PoP Alert -->
+
+<!-- <div class="confirmation-modal">
+    <a href="" class="close-btn">
+        <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+    </a>
+    <span class="ico" style="font-size: 30px !important; color: chartreuse !important;font-weight: bolder;">
+        <ion-icon name="checkmark-circle-outline" role="img" class="md hydrated" aria-label="checkmark circle outline"></ion-icon>
+    </span>
+    <h3>SuccessFully Registered! <br> Check Your Inbox.</h3>
+</div> -->
+
+<!--Header-->
+
 
     <header class="header-area">
         <div class="gota_top bg-soft d-none d-sm-block">

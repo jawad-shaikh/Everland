@@ -138,14 +138,14 @@
                                             <div class="product product-4">
                                                 <div class="product__thumb">
                                                     <a href="single.html">
-                                                    <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
+                                                        <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
                                                         <img class="product-secondary" src="./assets/img/product/4-2.jpg" alt="product_image">
                                                     </a>
                                                     <!-- <div class="product__update">
                                                         <a class="#">new</a>
                                                     </div> -->
                                                     <div class="product-info mb-10">
-                                                       
+
                                                     </div>
                                                     <div class="product__name">
                                                         <h4><a href="single.html">ndoor Shoes Home Slipper</a></h4>
@@ -165,14 +165,14 @@
                                             <div class="product product-4">
                                                 <div class="product__thumb">
                                                     <a href="single.html">
-                                                    <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
+                                                        <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
                                                         <img class="product-secondary" src="./assets/img/product/4-2.jpg" alt="product_image">
                                                     </a>
                                                     <!-- <div class="product__update">
                                                             <a class="#">new</a>
                                                         </div> -->
                                                     <div class="product-info mb-10">
-                                                        
+
                                                     </div>
                                                     <div class="product__name">
                                                         <h4><a href="single.html">Sneakers Converse for Men</a></h4>
@@ -182,7 +182,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="product__action">
-                                                        
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -202,7 +202,7 @@
                                                             <a class="#">new</a>
                                                         </div> -->
                                                     <div class="product-info mb-10">
-                                                        
+
                                                     </div>
                                                     <div class="product__name">
                                                         <h4><a href="single.html">NikeCourt Air Zoom Prestige</a></h4>
@@ -212,7 +212,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="product__action">
-                                                     
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -246,7 +246,7 @@
                                                         <div class="list-actions pt-20">
                                                             <div class="viewcontent__action">
                                                                 <span><a href="#">add to cart</a></span>
-                                                               
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -263,125 +263,6 @@
         </div>
     </div>
 </div>
-<!-- shop page end -->
-
-<!-- search area  -->
-<!-- <div class="search_area">
-    <div class="search_close">
-        <span><i class="fal fa-times"></i></span>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12">
-                <div class="search-wrapper text-center">
-                    <h2>search</h2>
-                    <div class="search-filtering pt-30">
-                        <div class="search_tab">
-                            <ul class="nav nav-tabs justify-content-center mb-55" id="fff" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" data-bs-target="#home2" type="button" role="tab" aria-controls="home" aria-selected="true">All categories</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#profile2" type="button" role="tab" aria-controls="profile" aria-selected="false">Basketball</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact2" type="button" role="tab" aria-controls="contact" aria-selected="false">Handbag</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="sportswear-tab" data-bs-toggle="tab" data-bs-target="#sportswear" type="button" role="tab" aria-controls="sportswear" aria-selected="false">Sportswear</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="contact3-tab" data-bs-toggle="tab" data-bs-target="#contact3" type="button" role="tab" aria-controls="contact2" aria-selected="false">Youth</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent2">
-                                <div class="tab-pane fade show active" id="home2" role="tabpanel">
-
-                                </div>
-                                <div class="tab-pane fade" id="profile2" role="tabpanel">
-
-                                </div>
-                                <div class="tab-pane fade" id="contact2" role="tabpanel">
-
-                                </div>
-                                <div class="tab-pane fade" id="sportswear" role="tabpanel">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main_search">
-                        <form action="#">
-                            <input type="text" name="search" placeholder="search products">
-                            <button class="m-search"><i class="fal fa-search d-sm-none d-md-block"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- popup area start -->
-<!-- <div class="overlay"></div> -->
-<!-- <div class="product-popup">
-    <div class="view-background">
-        <div class="row">
-            <div class="col-xl-5 col-lg-5 col-md-5">
-                <div class="quickview">
-                    <div class="quickview__thumb">
-                        <img src="./assets/img/quick_view/25.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-7 col-md-7">
-                <div class="viewcontent">
-                    <div class="viewcontent__header">
-                        <a href="single.html">
-                            <h2>Brown Leather Bags</h2>
-                        </a> <a class="view_close product-p-close" href="javascript:void(0)"><i class="fal fa-times-circle"></i></a>
-                    </div>
-                    <div class="viewcontent__rating">
-                        <i class="fal fa-star ratingcolor"></i>
-                        <i class="fal fa-star ratingcolor"></i>
-                        <i class="fal fa-star ratingcolor"></i>
-                        <i class="fal fa-star"></i>
-                    </div>
-                    <div class="viewcontent__price">
-                        <h4><span>$</span>99.00</h4>
-                    </div>
-                    <div class="viewcontent__stock">
-                        <h4>Available :<span> In stock</span></h4>
-                    </div>
-                    <div class="viewcontent__details">
-                        <p>Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.</p>
-                    </div>
-                    <div class="viewcontent__action">
-                        <span>Qty</span>
-                        <span><input type="number" placeholder="1"></span>
-                        <span><a href="#">add to cart</a></span>
-                        <span><i class="fal fa-heart"></i></span>
-                        <span><i class="fal fa-info-circle"></i></span>
-                    </div>
-                    <div class="viewcontent__footer">
-                        <ul>
-                            <li>Category:</li>
-                            <li>SKU:</li>
-                            <li>Brand:</li>
-                        </ul>
-                        <ul>
-                            <li>Watches</li>
-                            <li>2584-MK63</li>
-                            <li>Brenda</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- product popup -->
-<!-- popup area end -->
-
 <?php include './partials/footer.php' ?>
 
 </html>
