@@ -20,16 +20,16 @@
                             <div class="single_prodct">
                                 <ul class="nav nav-tabs justify-content-center mb-55" id="dfde" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#homde" type="button" role="tab" aria-selected="true"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#homde" type="button" role="tab" aria-selected="true"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profidfdle" type="button" role="tab" aria-selected="false"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profidfdle" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contadfdct" type="button" role="tab" aria-selected="false"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contadfdct" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kidsdfd" type="button" role="tab" aria-selected="false"><img  src="./assets/img/product/3-2.jpg" alt="product_image"></button>
+                                        <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kidsdfd" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
                                     </li>
                                 </ul>
                             </div>
@@ -43,22 +43,22 @@
                             <div class="tab-content" id="myTabefContent">
                                 <div class="tab-pane fade show active" id="homde" role="tabpanel">
                                     <div class="full-view">
-                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
+                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="profidfdle" role="tabpanel">
                                     <div class="full-view">
-                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
+                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="contadfdct" role="tabpanel">
                                     <div class="full-view">
-                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
+                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="kidsdfd" role="tabpanel">
                                     <div class="full-view">
-                                    <img  src="./assets/img/product/3-2.jpg" alt="product_image">
+                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="single_preview_content pl-30">
                     <h2 class="title-5 edit-title border-bottom-0">Arsenal Home Jersey</h2>
-                    
+
                     <div class="s-price pt-30 mb-30">
                         <span>$45.00</span>
                     </div>
@@ -178,7 +178,7 @@
                                                                                 <div class="product__update">
                                                                                     <a class="#">new</a>
                                                                                 </div>
-                                                                               
+
                                                                                 <div class="product__name">
                                                                                     <h4><a href="#">NikeCourt Air Zoom Prestige</a></h4>
                                                                                     <div class="pro-price">
@@ -188,12 +188,10 @@
                                                                                         <a class="p-absoulute pr-2" href="#">add to cart</a>
                                                                                     </div>
                                                                                 </div>
-                                                                                
+
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                  
-
                                                                 </div>
                                                             </div>
                                                         </div>

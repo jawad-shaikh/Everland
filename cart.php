@@ -38,13 +38,6 @@
                                 </td>
                             </tr>
                         </tbody>
-                        <tfoot>
-                            <tr class="design-footer">
-                                <td><input type="text" placeholder="Coupon Code"></td>
-                                <td><button type="submit">Apply Coupon</button></td>
-                                <td colspan="3"><a href="#">update cart</a></td>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
