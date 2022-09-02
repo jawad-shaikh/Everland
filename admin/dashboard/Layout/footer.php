@@ -126,12 +126,6 @@
     </div>
 </div>
 
-<?php
-$sqlCounter = "SELECT * FROM counter WHERE id=2";
-$runCounter = mysqli_query($con, $sqlCounter);
-$rowDate = mysqli_fetch_array($runCounter);
-
-?>
 
 <!-- modals ppup  -->
   <!-- Modal -->
@@ -149,12 +143,12 @@ $rowDate = mysqli_fetch_array($runCounter);
               
                 <div class="form-group">
                     <label for="inputAddress">Date</label>
-                    <input type="date" name="date" value="<?= $rowDate['date'] ?>" class="form-control">
+                    <input type="date" name="date" value="2020" class="form-control">
                 </div>
 
                 <div class="form-group">
                     <label for="inputAddress">Time</label>
-                    <input type="time" name="time" value="<?= $rowDate['time'] ?>" class="form-control">
+                    <input type="time" name="time" value="12" class="form-control">
                 </div>
               
             </div>
