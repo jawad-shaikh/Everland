@@ -5,7 +5,7 @@
 <?php include './components/sidebar.php' ?>
 <?php include './components/cart.php' ?>
 <?php include './components/loginpopup.php' ?>
-<?php include './components/alert.php' ?>
+<?php // include './components/alert.php' ?>
 
 <!-- slider start -->
 <div class="slider-active slider-2 swiper-container height hight2 d-none d-md-block">
@@ -100,30 +100,8 @@
                         <div class="tab-pane fade show active" id="tablid">
                             <div class="container">
                                 <div class="product-active h-2-product-active swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="product-item swiper-slide wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                                            <div class="product">
-                                                <div class="product__thumb">
-                                                    <a href="single.html">
-                                                        <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
-                                                        <img class="product-secondary" src="./assets/img/product/4-2.jpg" alt="product_image">
-                                                    </a>
-                                                    <div class="product__update">
-                                                        <a class="#">new</a>
-                                                    </div>
-                                                    <div class="product-info mb-10">
-
-                                                    </div>
-                                                    <div class="product__name">
-                                                        <h4><a href="shop.html">Korean version of women </a></h4>
-                                                        <div class="pro-price">
-                                                            <p class="p-absoulute pr-1"><span>$</span>680.00 - <span>$</span>680.00</p>
-                                                            <a class="p-absoulute pr-2 addcart" href="#">add to cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="swiper-wrapper" id="Sale-Pro">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -197,28 +175,8 @@
                         <div class="tab-pane fade show active" id="tablid">
                             <div class="container">
                                 <div class="product-active h-2-product-active swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="product-item swiper-slide wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                                            <div class="product">
-                                                <div class="product__thumb">
-                                                    <a href="single.html">
-                                                        <img class="product-primary" src="./assets/img/product/3-2.jpg" alt="product_image">
-                                                        <img class="product-secondary" src="./assets/img/product/4-2.jpg" alt="product_image">
-                                                    </a>
-                                                    <div class="product__update">
-                                                        <a class="#">new</a>
-                                                    </div>
-                                                    <div class="product-info mb-10"></div>
-                                                    <div class="product__name">
-                                                        <h4><a href="shop.html">Korean version of women </a></h4>
-                                                        <div class="pro-price">
-                                                            <p class="p-absoulute pr-1"><span>$</span>680.00 - <span>$</span>680.00</p>
-                                                            <a class="p-absoulute pr-2 addcart" href="#">add to cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="swiper-wrapper" id="NonSale-pro">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -270,8 +228,11 @@
                             <span>60.000+ Subscribers</span> and get a new discount coupon<br> on every Saturday.
                         </p>
                         <div class="subscribe  subscribe-2 pt-20">
-                            <form action="#">
-                                <input class="mb-10" type="email" placeholder="Subscribe to our newsletter..." />
+                            <div>
+                                <label id="subsMessage" style="display:block;" class="my-3"></label>
+                            </div>
+                            <form id="subscribe">
+                                <input class="mb-10" type="email" name="subsmail" id="subsmail" placeholder="Subscribe to our newsletter..." />
                                 <button>Subscribe</button>
                             </form>
                         </div>
@@ -347,7 +308,7 @@
     </div>
 </div>
 <!-- popup area end -->
-
+<?php $scripts .= '<script src="assets/js/own/home.js"></script>'; ?>
 <?php include 'partials/footer.php' ?>
 
 </html>

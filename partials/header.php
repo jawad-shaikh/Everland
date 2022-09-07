@@ -1,12 +1,16 @@
+<?php
+ $scripts = '';
+ $isAuth = true;
+?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Gota eCommerce HTML5 Template</title>
+
+    <title>E-Commerce</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- Mandatory scripts for Icons to load before the content -->
@@ -26,7 +30,6 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
 </head>
 
 <body>
@@ -36,14 +39,15 @@
 
     <header class="header-area">
         <div class="gota_top bg-soft d-none d-sm-block">
-            <div class="container-fluid">
+            <div class="container-fluid py-2">
                 <div class="row">
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                     </div>
                     <div class="col-xl-4 offset-xl-5 col-lg-6 col-md-6 col-sm-6 text-end">
                         <div class="gota_right">
                             <ul>
-                                <li><a href="login.php">Login & register</a></li>
+                                <li id="loginM"><a href="login.php">Login & register</a></li>
+                                <li id="loggedin" style="display:none;"><a href="#" class="name"></a> / <a href="#" onclick="Logout(this);">Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -83,7 +87,7 @@
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
                         <div class="gota_cart gotat_cart_1 text-end">
-                            <a href="javascript:void(0)"><i class="fal fa-shopping-cart"></i>My Bag<span class="counter"> (2)</span></a>
+                            <a href="javascript:void(0)" id="openCart"><i class="fal fa-shopping-cart"></i>My Bag<span class="counter bag-counter">(0)</span></a>
                         </div>
                     </div>
                 </div>

@@ -57,8 +57,11 @@
                         <span>60.000+ Subscribers</span> and get a new discount coupon<br> on every Saturday.
                     </p>
                     <div class="subscribe pt-20">
-                        <form action="#">
-                            <input type="email" placeholder="Enter your email here..." />
+                        <form id="subscribe2">
+                            <div>
+                            <label id="subsMessage2" style="display:block;" class="my-3"></label>
+                            </div>
+                            <input type="email" placeholder="Enter your email here..." name="subsmail2" id="subsmail2" />
                             <button>Subscribe</button>
                         </form>
                     </div>
@@ -68,7 +71,7 @@
         <div class="footer__bottom pb-10 mt-60">
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 ">
-                    <p>Copyright © <span>Gota Store</span> All Rights Reserved. Powered by <span><a href="themepure.net">theme_pure</a></span>
+                    <p>Copyright © <span>Gota Store</span> All Rights Reserved. Powered by <span><a href="aetsmsoft.com">AetsmSoft</a></span>
                     </p>
                 </div>
                 <div class="col-xl-5 offset-xl-2 col-lg-4 col-md-6 col-sm-12">
@@ -106,4 +109,13 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
+<?php
+echo $scripts;
+?>
+<script>
+    <?php if($isAuth != false) {
+        echo "Auth();";
+    }
+    ?>
+</script>
 </body>
