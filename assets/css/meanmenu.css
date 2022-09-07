@@ -170,7 +170,7 @@ a.meanmenu-reveal {
 
 
 .cart-offcanvas-overlay{
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	right: 0;
@@ -178,7 +178,7 @@ a.meanmenu-reveal {
 	background: #000;
 	height: 100%;
 	width: 100%;
-	z-index: 2;
+	z-index: 9999999;
 	opacity: 0;
 	visibility: hidden;
 }

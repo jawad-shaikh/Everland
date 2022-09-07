@@ -24,8 +24,7 @@ $('.side-info-close,.offcanvas-overlay').on('click', function () {
 
 //cart active
 $('.gota_cart').click(function(){
-	$('.cart__sidebar').addClass('open-cart');
-	$('.cart-offcanvas-overlay').addClass('open-cart-overlay');
+	getCartItems();
 })
 $('.cart-icon,.cart-offcanvas-overlay').click(function(){
   $('.cart__sidebar').removeClass('open-cart');
@@ -209,7 +208,6 @@ if (jQuery(".product-active2").length > 0) {
 		slidesPerView: 4,
 		spaceBetween: 30,
 		loop: false,
-
 
 		// If we need pagination
 		pagination: {
@@ -454,13 +452,318 @@ $('.view').on('click',function() {
 $('.overlay,.product-p-close').on('click',function() {
 	$('.overlay,.product-popup').removeClass('show-popup');
 });
-
-$('.cart_close').click(function(){
-	$('.add_cart_product').hide();
-})
-
-
-
-
-
 })(jQuery);
+function itemCloseReRegister(){
+	$('.cart_close').click(function(){
+		$(this).parent().parent().hide();
+		ExcludeCart(this);
+		//$('.add_cart_product').hide();
+	})
+}
+function ClearErrMsg()
+{
+    $('#errMsg').html('');
+}
+function setErrMsg(msg)
+{
+    ClearErrMsg();
+    $('#errMsg').css("color","red")
+    $('#errMsg').html(msg);
+}
+function setGreenMsg(msg)
+{
+    ClearErrMsg();
+    $('#errMsg').css("color","green")
+    $('#errMsg').html(msg);
+}
+function getCookie(cname) {
+	try{
+	let name = cname + "=";
+	let decodedCookie = decodeURIComponent(document.cookie);
+	let ca = decodedCookie.split(';');
+	for(let i = 0; i <ca.length; i++) {
+	  let c = ca[i];
+	  while (c.charAt(0) == ' ') {
+		c = c.substring(1);
+	  }
+	  if (c.indexOf(name) == 0) {
+		return c.substring(name.length, c.length);
+	  }
+	}
+	return "";
+}
+catch{
+	return "";
+}
+  }
+  function setCookie(cname, cvalue, exdays) {
+	const d = new Date();
+	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	let expires = "expires="+ d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+
+  var api = 'http://localhost/jawad/api/';
+  var base = 'http://localhost/jawad';
+  var isAuth = false;
+  var Name = '';
+  var email = '';
+  var Bagitem = 0;
+  function Logout(e)
+  {
+	setCookie("user","",0);
+	window.location.href = base+'/login.php';
+  }
+  function setBagItem(bg)
+  {
+	Bagitem = Bagitem+parseInt(bg);
+	$('.bag-counter').html("("+Bagitem+")");
+  }
+
+  function Auth()
+  {
+	var SessId = getCookie("user");
+	$.ajax({
+		url:api+'LoginHandler.php?type=Auth',
+		type:'Post',
+		data:{"SessionId":SessId},
+		success: function(response){
+			var resp = JSON.parse(response);
+			if(resp.Status == "1")
+			{
+				Name = resp.FullName;
+				email = resp.Email;
+				Bagitem = 0;
+				setBagItem(resp.bagItem);
+				$('#loginM').hide();
+				$('#loggedin > a.name').html(Name);
+				$('#loggedin').css("display","inline-block");
+			}
+			else{
+				$('#login').show();
+				setCookie("user",'',-1);
+				//window.location.href = '/login';
+			}
+		}
+	})
+  }
+  var CartData;
+
+  function getCartItems()
+  {
+	$('.cart__sidebar').addClass('open-cart');
+	$('.cart-offcanvas-overlay').addClass('open-cart-overlay');
+  }
+  var Subtotal = 0.00;
+  function recalculateSubtotal(){
+    Subtotal = 0.00;
+    for(var i = 0; i < CartData.length;i++)
+    {
+		if(CartData[i].quantity == 0 || CartData[i].quantity == '')
+		{
+			continue;
+		}
+		var val1 = parseFloat(CartData[i].DCPrice) * parseFloat(CartData[i].quantity);
+		var val2 = parseFloat(Subtotal);
+        Subtotal = parseFloat((val1 +  val2)).toFixed(2);
+    }
+    $('.crtSubTotal').html(Subtotal);
+}
+
+  function ExcludeCart(event)
+  {
+	var id = $(event).attr("data-id");
+	var SessId = getCookie("user");
+	$.ajax({
+		url:api + 'productHandler.php?type=delcart',
+		type:'Post',
+		data:{
+			"idx":id,
+			"SessId":SessId
+		},
+		success: function(resp){
+			setBagItem(-1);
+			for(var i = 0;i < CartData.length; i++)
+			{
+				var pro = CartData[i];
+				if(pro.idx == id)
+				{
+					CartData.splice(i,1);
+					break;
+				}
+			}
+			recalculateSubtotal();
+		}
+	});
+  }
+  itemCloseReRegister();
+  Cart();
+  function clearCart() {
+    $('#cacont').html('');
+}
+
+function Cart() {
+    
+	var SessId = getCookie("user");
+    $.ajax({
+        url: api + 'productHandler.php?type=getcart',
+        type: 'Post',
+        data:{"SessId":SessId},
+        success: function (resp) {
+			clearCart();
+            var Json = JSON.parse(resp);
+            for (var i = 0; i <= Json.length; i++) {
+                if (Json[i] != null) {
+                    setCart(Json[i]);
+                }
+            }
+			Bagitem = 0;
+			setBagItem(Json.length);
+			CartData = Json;
+			recalculateSubtotal();
+            itemCloseReRegister();
+        }
+    });
+}
+function getRequest(variable)
+{ 
+  var query = window.location.search.substring(1); 
+  var vars = query.split("&"); 
+  for (var i=0;i<vars.length;i++)
+  { 
+    var pair = vars[i].split("="); 
+    if (pair[0] == variable)
+    { 
+      return pair[1]; 
+    } 
+  }
+  return -1; //not found 
+}
+function setCart(product) {
+    var template_1 = `
+    <div class="add_cart_product">
+                    <div class="add_cart_product__thumb">
+                        <img src="admin/dashboard/product-images/${product.image}" alt="${product.title}">
+                    </div>
+                    <div class="add_cart_product__content">
+                        <h5><a href="single.php?id=${product.id}">${product.title}</a></h5>
+                        <p>${product.quantity} × $${parseFloat(product.DCPrice).toFixed(2)}</p>
+                        <button class="cart_close" data-id="${product.idx}"><i class="fal fa-times"></i></button>
+                    </div>
+                </div>
+    `;
+    $('#cacont').append(template_1);
+}
+
+	$('#srcsub').on("submit" ,function(e){
+		e.preventDefault();
+		var term = $('#TxtSrc').val();
+		window.location.href = base+"/shop.php?term="+term;
+	});
+var salemama = 0;
+function setSale(product) {
+	salemama++;
+	if (salemama >= 6) {
+		return;
+	}
+	var price = parseFloat(product.DCPrice).toFixed(2) + "";
+	if (product.sale == "1") {
+		price = `<del>${product.price}</del> <span style="color:forestgreen;">${price}</span>`
+	}
+
+	var template = `<div class="product-item swiper-slide wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+    <div class="product">
+        <div class="product__thumb">
+            <a href="single.php?id=${product.id}">
+                <img class="product-primary" src="admin/dashboard/product-images/${product.image}" alt="product_image">
+            </a>
+            <div class="product__update">
+            <a class="#">Sale</a>
+        </div>
+            <div class="product-info mb-10">
+
+            </div>
+            <div class="product__name">
+                <h4><a href="single.php?id=${product.id}">${product.title}</a></h4>
+                <div class="pro-price">
+                    <p class="p-absoulute pr-1"><span>$</span>${price}</p>
+                    <button class="p-absoulute pr-2 addcart buts" href="#" onclick="AddToCart(this,${product.id})">add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+	$('#Sale-Pro').append(template);
+}
+
+
+function AddToCart(from, productId) {
+	loggedIn(() => {
+		from.onclick = function () {
+			return false;
+		}
+	
+		var href = from.href;
+		from.href = "";
+		var SessId = getCookie("user");
+		$.ajax({
+			url: api + 'productHandler.php?type=cart',
+			type: 'Post',
+			data: {
+				"SessId": SessId,
+				"ProductId": productId
+			},
+			success: function (resp) {
+				console.log(resp);
+				Cart();
+				$('#openCart').click();
+				from.href = href;
+			}
+		});
+	});
+    
+}
+$('#subscribe').on('submit',function(e){
+	e.preventDefault();
+	$.ajax({
+		url:api+'crmHandler.php?type=subscribe',
+		type: 'Post',
+		data:{
+			"mail":$('#subsmail').val()
+		},
+		success: function(resp){
+			console.log(resp);
+			Json= JSON.parse(resp);
+			if(Json.status=="1")
+			{
+				$('#subsMessage').css("color","green");
+				$('#subsMessage').html("Thanks For Subscribing We will keep you Updated");
+				$('#subsmail').val("")
+			}
+		}
+	})
+});
+
+
+$('#subscribe2').on('submit',function(e){
+	e.preventDefault();
+	$.ajax({
+		url:api+'crmHandler.php?type=subscribe',
+		type: 'Post',
+		data:{
+			"mail":$('#subsmail2').val()
+		},
+		success: function(resp){
+			console.log(resp);
+			Json= JSON.parse(resp);
+			if(Json.status=="1")
+			{
+				$('#subsMessage2').css("color","green");
+				$('#subsMessage2').html("Thanks For Subscribing We will keep you Updated");
+				$('#subsmail2').val("")
+			}
+		}
+	})
+});

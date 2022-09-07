@@ -276,6 +276,9 @@
 </div>
 <!-- brand area end -->
 
-<?php include './partials/footer.php' ?>
+<?php 
+ $scripts .= '<script src="assets/js/own/about.js"></script>';
+include './partials/footer.php';
+ ?>
 
 </html>

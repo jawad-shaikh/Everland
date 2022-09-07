@@ -7,3 +7,5 @@
     </span>
     <h3>SuccessFully Registered! <br> Check Your Inbox.</h3>
 </div>
+
+

@@ -9,8 +9,10 @@
 
 <?php include './components/cart.php' ?>
 
+<?php include './components/loginpopup.php' ?>
+
 <!-- single_breadcrumb_area start -->
-<div class="single_breadcrumb pt-25">
+<div class="single_breadcrumb pt-25 py-5 my-5">
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12">
@@ -19,18 +21,7 @@
                         <div class="single_product_tab">
                             <div class="single_prodct">
                                 <ul class="nav nav-tabs justify-content-center mb-55" id="dfde" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#homde" type="button" role="tab" aria-selected="true"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profidfdle" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contadfdct" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kidsdfd" type="button" role="tab" aria-selected="false"><img src="./assets/img/product/3-2.jpg" alt="product_image"></button>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -41,26 +32,7 @@
                                 <a class="popup-image" href="./assets/img/product/17-3.jpg"><i class="fal fa-search"></i></a>
                             </div>
                             <div class="tab-content" id="myTabefContent">
-                                <div class="tab-pane fade show active" id="homde" role="tabpanel">
-                                    <div class="full-view">
-                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="profidfdle" role="tabpanel">
-                                    <div class="full-view">
-                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="contadfdct" role="tabpanel">
-                                    <div class="full-view">
-                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="kidsdfd" role="tabpanel">
-                                    <div class="full-view">
-                                        <img src="./assets/img/product/3-2.jpg" alt="product_image">
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -68,17 +40,17 @@
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="single_preview_content pl-30">
-                    <h2 class="title-5 edit-title border-bottom-0">Arsenal Home Jersey</h2>
+                    <h2 class="title-5 edit-title border-bottom-0" id="pro-title">Arsenal Home Jersey</h2>
 
                     <div class="s-price pt-30 mb-30">
-                        <span>$45.00</span>
+                        <span id="pro-price">$45.00</span>
                     </div>
-                    <div class="s-des">
+                    <div class="s-des" id="Desc">
                         <p>Designed by Hans J. Wegner in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs Wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back and seat offers a</p>
                     </div>
                     <div class="viewcontent__action single_action pt-30">
-                        <span><input type="number" placeholder="1"></span>
-                        <span><a href="cart.html">+ add to cart</a></span>
+                        <!-- <span><input type="number" placeholder="1"></span> -->
+                        <span><button onclick="AddToCartM(this)">add to cart</button></span>
                     </div>
                     <div class="social__media f-social-media mb-30 pt-15">
                         <h3 class="f-title edit-f-title">FOLLOW US ON</h3>
@@ -94,7 +66,7 @@
     </div>
 </div>
 <!-- single_breadcrumb_area end -->
-
+<!-- Review Code
 <div class="single_product_long_desc pt-50">
     <div class="container">
         <div class="row">
@@ -120,27 +92,27 @@
                                         </div>
                                         <h4 class="pt-60 mb-25 add_review">Add a review </h4>
                                         <div class="review_form">
-                                            <form action="#">
+                                            <form action="" id="Review">
                                                 <div class="review__wrap_1">
                                                     <label>Your Review *</label>
-                                                    <textarea name="review"></textarea>
+                                                    <textarea name="review" id="review"></textarea>
                                                 </div>
                                                 <div class="review__wrap">
                                                     <div class="row">
                                                         <div class="col-xl-6 col-lg-6 col-md-6">
                                                             <label>Name <span>*</span></label>
-                                                            <input type="text" name="fname">
+                                                            <input type="text" name="fname" id="fname">
                                                         </div>
                                                         <div class="col-xl-6 col-lg-6 col-md-6">
                                                             <div class="review__wrap">
                                                                 <label>Email <span>*</span></label>
-                                                                <input type="text" name="email">
+                                                                <input type="text" name="email" id="email">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="review__wrap_2">
-                                                    <input type="checkbox" name="email">
+                                                    <input type="checkbox" name="email" id="subscription">
                                                     <span class="pt-10 pb-10">Save my name, email, and website in this browser for the next time I comment.</span>
                                                 </div>
                                                 <div class="review__wrap pt-15">
@@ -152,7 +124,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- categories area start -->
+
                             <div class="categories_area pt-85 mb-150">
                                 <div class="container-fluid">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -167,31 +139,8 @@
                                                     <div class="tab-pane fade show active" id="home20" role="tabpanel">
                                                         <div class="container">
                                                             <div class="product-active swiper-container">
-                                                                <div class="swiper-wrapper">
-                                                                    <div class="product-item swiper-slide wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                                                                        <div class="product">
-                                                                            <div class="product__thumb">
-                                                                                <a href="#">
-                                                                                    <img class="product-primary" src="./assets/img/product/cat1.png" alt="product_image">
-                                                                                    <img class="product-secondary" src="./assets/img/product/6.jpg" alt="product_image">
-                                                                                </a>
-                                                                                <div class="product__update">
-                                                                                    <a class="#">new</a>
-                                                                                </div>
-
-                                                                                <div class="product__name">
-                                                                                    <h4><a href="#">NikeCourt Air Zoom Prestige</a></h4>
-                                                                                    <div class="pro-price">
-                                                                                        <p class="p-absoulute pr-1"><span>$</span>680.00 -
-                                                                                            <span>$</span>680.00
-                                                                                        </p>
-                                                                                        <a class="p-absoulute pr-2" href="#">add to cart</a>
-                                                                                    </div>
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="swiper-wrapper" id="Sale-Pro">
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -202,14 +151,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- categories area end -->
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -249,13 +198,13 @@
                     </div>
                     <div class="viewcontent__action">
                         <span>Qty</span>
-                        <span><input type="number" placeholder="1"></span>
-                        <span><a href="#">add to cart</a></span>
+                        <!-- <span><input type="number" placeholder="1"></span> -->
+                        <span><button onclick="AddToCartM(this)">add to cart</button></span>
                         <span><i class="fal fa-heart"></i></span>
                         <span><i class="fal fa-info-circle"></i></span>
                     </div>
                     <div class="viewcontent__footer">
-                        <ul>
+                        <!-- <ul>
                             <li>Category:</li>
                             <li>SKU:</li>
                             <li>Brand:</li>
@@ -264,7 +213,7 @@
                             <li>Watches</li>
                             <li>2584-MK63</li>
                             <li>Brenda</li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -272,7 +221,9 @@
     </div>
 </div>
 <!-- popup area end -->
-
+<?php
+    $scripts .= '<script src="assets/js/own/single.js"></script>';
+?>
 <?php include './partials/footer.php' ?>
 
 </html>
