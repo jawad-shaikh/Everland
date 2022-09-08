@@ -63,7 +63,7 @@ function loggedIn(callback){
             }
             else{
                 $('#Msg').css("color","red");
-                $('#Msg').html('Wrong Username Or Password');
+                $('#Msg').html('Wrong username or password');
             }
         }
     });

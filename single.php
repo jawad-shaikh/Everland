@@ -123,7 +123,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="categories_area pt-85 mb-150">
                                 <div class="container-fluid">
@@ -152,6 +152,7 @@
                                 </div>
                             </div>
                             
+                            <!--
                         </div>
                     </div>
                 </div>

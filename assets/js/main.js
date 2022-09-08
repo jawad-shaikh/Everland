@@ -115,7 +115,7 @@ var swiper = new Swiper('.slider-active', {
 		});
 		$("#amount-2").val("$" + $("#slider-range-2").slider("values", 0) +
 			" - $" + $("#slider-range-2").slider("values", 1));
-		$('#filter-btn-2').on('click', function () {
+		$('#filter-btn-2').on('click', function () {z
 			$('.filter-widget').slideToggle(1000);
 		});
 

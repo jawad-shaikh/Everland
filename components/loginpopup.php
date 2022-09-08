@@ -18,7 +18,7 @@
                         <label>Password<span>*</span></label>
                         <input type="password" name="password" class="password-field" id="id_password" value="" required="">
                     </div>
-                    <h5 id="Msg"></h5>
+                    <small id="Msg"></small>
                     <div class="input_wrapp-2">
                         <input type="checkbox" name="remember" class="loginCheck">
                         <span>Remember me </span>
