@@ -504,8 +504,8 @@ catch{
   }
 
 
-  var api = 'http://localhost/jawad/api/';
-  var base = 'http://localhost/jawad';
+  var api = 'http://localhost/Everland/api/';
+  var base = 'http://localhost/Everland';
   var isAuth = false;
   var Name = '';
   var email = '';

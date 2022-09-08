@@ -1,6 +1,0 @@
-[20-Jun-2022 19:05:10 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/whynmzhg/ecommerce.whynotpros.com/admin/dashboard/contact-table.php on line 53
-[20-Jun-2022 21:19:34 America/New_York] PHP Notice:  Undefined index: email in /home/whynmzhg/ecommerce.whynotpros.com/admin/dashboard/Layout/header.php on line 6
-[23-Jun-2022 16:45:34 America/New_York] PHP Notice:  Undefined variable: permission in /home/whynmzhg/ecommerce.whynotpros.com/admin/dashboard/admin_table.php on line 10
-[23-Jun-2022 16:45:34 America/New_York] PHP Notice:  Undefined index: email in /home/whynmzhg/ecommerce.whynotpros.com/admin/dashboard/Layout/header.php on line 6
-[23-Jun-2022 17:48:04 America/New_York] PHP Notice:  Undefined variable: permission in /home/whynmzhg/ecommerce.whynotpros.com/admin/dashboard/admin_table.php on line 10
-[23-Jun-2022 17:48:04 America/New_York] PHP Notice:  Undefined index: email in /home/whynmzhg/ecommerce.whynotpros.com/admin/dashboard/Layout/header.php on line 6
